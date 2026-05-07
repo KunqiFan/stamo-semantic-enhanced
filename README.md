@@ -99,18 +99,6 @@ python scripts/ablation_head_position.py
 python scripts/evaluate.py --config configs/experiment.yaml
 ```
 
-## Citation
-
-If you find this work useful, please cite:
-
-```
-@misc{fan2026semantic,
-  title={Semantic-Enhanced Visual Representation Learning for Robotic Manipulation},
-  author={Kunqi Fan},
-  year={2026},
-  institution={Zhejiang University, Turing Class}
-}
-```
 
 ## License
 
