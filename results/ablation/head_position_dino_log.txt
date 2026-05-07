@@ -1,0 +1,43 @@
+
+--- Training dino ---
+
+============================================================
+Training position=dino, task=droid_sem_pos_dino
+============================================================
+04/30 [14:41:31] INFO     | >> [*] 2659 pair samples loaded from    data.py:169
+                          ../data/processed/droid_process_chain/tra            
+                          in.jsonl                                             
+  [droid_sem_pos_dino] step 500/5000  loss=14.2709  diff=4.0994  sem=10.1715  speed=1.6 step/s
+  [droid_sem_pos_dino] step 1000/5000  loss=12.0731  diff=2.3423  sem=9.7308  speed=1.6 step/s
+  [droid_sem_pos_dino] step 1500/5000  loss=11.6172  diff=2.2124  sem=9.4049  speed=1.6 step/s
+  [droid_sem_pos_dino] step 2000/5000  loss=11.0720  diff=2.1595  sem=8.9126  speed=1.6 step/s
+  [droid_sem_pos_dino] step 2500/5000  loss=11.0036  diff=2.2452  sem=8.7584  speed=1.6 step/s
+  [droid_sem_pos_dino] step 3000/5000  loss=10.5246  diff=2.1502  sem=8.3744  speed=1.6 step/s
+  [droid_sem_pos_dino] step 3500/5000  loss=10.4892  diff=2.2224  sem=8.2668  speed=1.6 step/s
+  [droid_sem_pos_dino] step 4000/5000  loss=10.3923  diff=2.1809  sem=8.2114  speed=1.6 step/s
+  [droid_sem_pos_dino] step 4500/5000  loss=9.9336  diff=2.0773  sem=7.8563  speed=1.6 step/s
+  [droid_sem_pos_dino] step 5000/5000  loss=9.9909  diff=2.1316  sem=7.8593  speed=1.6 step/s
+  Saved checkpoint: C:\Users\ryanf\Desktop\stamo_pro - 副本 - 副本\StaMo\ckpts\droid_sem_pos_dino\5000
+
+--- Extracting features dino ---
+04/30 [15:34:38] WARNING  | >> [*] loading checkpoints from     renderer.py:231
+                          C:\Users\ryanf\Desktop\stamo_pro -                   
+                          副本 -                                               
+                          副本\StaMo\ckpts\droid_sem_pos_dino\5                
+                          000                                                  
+04/30 [15:34:39] WARNING  | >> [*] RenderNet - Missing          renderer.py:240
+                          top-level keys: ['projector', 'vae',                 
+                          'vision_backbone']                                   
+                 WARNING  | >> [*] RenderNet - Unexpected       renderer.py:241
+                          top-level keys: []                                   
+                 WARNING  | >> [*] Projector - Missing          renderer.py:240
+                          top-level keys: []                                   
+                 WARNING  | >> [*] Projector - Unexpected       renderer.py:241
+                          top-level keys: []                                   
+                 WARNING  | >> [*] SemanticHead - Missing       renderer.py:240
+                          top-level keys: []                                   
+                 WARNING  | >> [*] SemanticHead - Unexpected    renderer.py:241
+                          top-level keys: []                                   
+  Extracting 2659 features (dino) from train.jsonl...
+  Extracting 638 features (dino) from test.jsonl...
+  Features saved to C:\Users\ryanf\Desktop\stamo_pro - 副本 - 副本\data\interim\droid_process_chain\latents_pos_dino

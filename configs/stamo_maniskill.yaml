@@ -1,0 +1,68 @@
+# StaMo config for ManiSkill3 data — Group A: diffusion only
+seed: 33
+do_train: True
+log_dir: "logs"
+resume: False
+resume_path: ""
+task_name: "maniskill_diffonly"
+fabric: True
+use_bf16: True
+
+vision_backbone:
+  model_name: "vit_base_patch14_reg4_dinov2.lvd142m"
+  local_ckpt: ""
+  pretrained: True
+
+projector:
+  num_token: 2
+  num_attn_layers: 4
+  num_attn_compress_layers: 4
+  hidden_dim: 512
+  cross_attention_dim: 256
+  output_align_dim: 1024
+
+render_net:
+  toy_mode: True
+  token_dropout: False
+  eval_scheduler: ddpm
+  guidance_scale: 1
+  num_inference_steps: 20
+  toy:
+    sample_size: 56
+    patch_size: 2
+    in_channels: 4
+    num_layers: 6
+    attention_head_dim: 64
+    num_attention_heads: 8
+    caption_projection_dim: 512
+    pooled_projection_dim: 512
+    pos_embed_max_size: 64
+    num_train_timesteps: 1000
+  sd3:
+    local_ckpt: ""
+
+semantic_head:
+  enabled: false
+  hidden_dim: 256
+  lambda_weight: 0.0
+
+data:
+  flip_p: 0.3
+  img_size: 224
+  num_workers: 4
+  train_manifest: ""
+  eval_manifest: ""
+
+train:
+  dist: False
+  epochs: 50
+  num_iters: 5000
+  eval_step: 1000
+  save_step: 1000
+  local_batch_size: 8
+  learning_rate: 5e-5
+  decay: 1e-3
+  constant_lr: False
+  eval_scheduler: ddpm
+  ckpt_save_dir: "ckpts"
+  gradient_accumulate_steps: 1

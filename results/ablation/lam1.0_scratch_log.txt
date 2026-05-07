@@ -1,0 +1,74 @@
+Step 1: Training...
+
+============================================================
+Training lambda=1.0 FROM SCRATCH, task=droid_sem_lam1.0
+============================================================
+04/26 [18:29:09] INFO     | >> [*] 2659 pair samples loaded from    data.py:169
+                          ../data/processed/droid_process_chain/tra            
+                          in.jsonl                                             
+  [droid_sem_lam1.0] step 500/5000  loss=14.8987  diff=4.4038  sem=10.4948  speed=1.5 step/s
+  [droid_sem_lam1.0] step 1000/5000  loss=11.8368  diff=2.3227  sem=9.5141  speed=1.5 step/s
+  [droid_sem_lam1.0] step 1500/5000  loss=11.4982  diff=2.2750  sem=9.2232  speed=1.5 step/s
+  [droid_sem_lam1.0] step 2000/5000  loss=11.1841  diff=2.3057  sem=8.8783  speed=1.5 step/s
+  [droid_sem_lam1.0] step 2500/5000  loss=10.9785  diff=2.2540  sem=8.7245  speed=1.5 step/s
+  [droid_sem_lam1.0] step 3000/5000  loss=10.4802  diff=2.2477  sem=8.2325  speed=1.5 step/s
+  [droid_sem_lam1.0] step 3500/5000  loss=9.9052  diff=2.1882  sem=7.7170  speed=1.5 step/s
+  [droid_sem_lam1.0] step 4000/5000  loss=9.6548  diff=2.1125  sem=7.5423  speed=1.5 step/s
+  [droid_sem_lam1.0] step 4500/5000  loss=7.6556  diff=2.1760  sem=5.4796  speed=1.5 step/s
+  [droid_sem_lam1.0] step 5000/5000  loss=7.6937  diff=2.3492  sem=5.3445  speed=1.5 step/s
+  Saved checkpoint: C:\Users\ryanf\Desktop\stamo_pro - 副本 - 副本\StaMo\ckpts\droid_sem_lam1.0\5000
+
+Step 2: Extracting features...
+04/26 [19:24:31] WARNING  | >> [*] loading checkpoints from     renderer.py:222
+                          C:\Users\ryanf\Desktop\stamo_pro -                   
+                          副本 -                                               
+                          副本\StaMo\ckpts\droid_sem_lam1.0\500                
+                          0                                                    
+                 WARNING  | >> [*] RenderNet - Missing          renderer.py:231
+                          top-level keys: ['projector', 'vae',                 
+                          'vision_backbone']                                   
+                 WARNING  | >> [*] RenderNet - Unexpected       renderer.py:232
+                          top-level keys: []                                   
+                 WARNING  | >> [*] Projector - Missing          renderer.py:231
+                          top-level keys: []                                   
+                 WARNING  | >> [*] Projector - Unexpected       renderer.py:232
+                          top-level keys: []                                   
+                 WARNING  | >> [*] SemanticHead - Missing       renderer.py:231
+                          top-level keys: []                                   
+                 WARNING  | >> [*] SemanticHead - Unexpected    renderer.py:232
+                          top-level keys: []                                   
+  Extracting 2659 features from train.jsonl...
+  Extracting 638 features from test.jsonl...
+  Features saved to C:\Users\ryanf\Desktop\stamo_pro - 副本 - 副本\data\interim\droid_process_chain\latents_sem_lam1.0
+
+Step 3: Evaluation...
+
+  === lambda=1.0 from scratch — visual-only (2560D) ===
+  HistGBT:
+    contact_state: 0.6787
+    gripper_state: 0.6520
+    object_motion: 0.6536
+    target_relation: 0.4107
+    mean: 0.5987
+  LogReg:
+    contact_state: 0.5141
+    gripper_state: 0.4953
+    object_motion: 0.5784
+    target_relation: 0.3574
+    mean: 0.4863
+
+  === lambda=1.0 from scratch — full (2629D) ===
+  HistGBT:
+    contact_state: 0.9639
+    gripper_state: 0.9107
+    object_motion: 0.9937
+    target_relation: 0.5549
+    mean: 0.8558
+  LogReg:
+    contact_state: 0.9342
+    gripper_state: 0.8636
+    object_motion: 0.7618
+    target_relation: 0.4828
+    mean: 0.7606
+
+Done!

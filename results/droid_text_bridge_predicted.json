@@ -1,0 +1,410 @@
+{
+  "raw_delta_z": {
+    "accuracy": 0.453,
+    "macro_f1": 0.1759,
+    "weighted_f1": 0.4023,
+    "feature_dim": 512,
+    "report": {
+      "approach": {
+        "precision": 0.5416666666666666,
+        "recall": 0.7323943661971831,
+        "f1-score": 0.6227544910179641,
+        "support": 355.0
+      },
+      "grasp": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 51.0
+      },
+      "lift": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 24.0
+      },
+      "move": {
+        "precision": 0.2571428571428571,
+        "recall": 0.16071428571428573,
+        "f1-score": 0.1978021978021978,
+        "support": 168.0
+      },
+      "place": {
+        "precision": 0.07142857142857142,
+        "recall": 0.05,
+        "f1-score": 0.058823529411764705,
+        "support": 40.0
+      },
+      "accuracy": 0.45297805642633227,
+      "macro avg": {
+        "precision": 0.17404761904761903,
+        "recall": 0.18862173038229377,
+        "f1-score": 0.17587604364638532,
+        "support": 638.0
+      },
+      "weighted avg": {
+        "precision": 0.3735874757426481,
+        "recall": 0.45297805642633227,
+        "f1-score": 0.40229083811695465,
+        "support": 638.0
+      }
+    }
+  },
+  "discrete_labels": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "feature_dim": 12,
+    "report": {
+      "approach": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 355.0
+      },
+      "grasp": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 51.0
+      },
+      "lift": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "move": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 168.0
+      },
+      "place": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 638.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 638.0
+      }
+    }
+  },
+  "template_text": {
+    "accuracy": 0.1693,
+    "macro_f1": 0.1361,
+    "weighted_f1": 0.1778,
+    "feature_dim": 384,
+    "report": {
+      "approach": {
+        "precision": 0.5666666666666667,
+        "recall": 0.09577464788732394,
+        "f1-score": 0.163855421686747,
+        "support": 355.0
+      },
+      "grasp": {
+        "precision": 0.09025270758122744,
+        "recall": 0.49019607843137253,
+        "f1-score": 0.1524390243902439,
+        "support": 51.0
+      },
+      "lift": {
+        "precision": 0.025,
+        "recall": 0.041666666666666664,
+        "f1-score": 0.03125,
+        "support": 24.0
+      },
+      "move": {
+        "precision": 0.2670807453416149,
+        "recall": 0.25595238095238093,
+        "f1-score": 0.2613981762917933,
+        "support": 168.0
+      },
+      "place": {
+        "precision": 0.05,
+        "recall": 0.125,
+        "f1-score": 0.07142857142857142,
+        "support": 40.0
+      },
+      "accuracy": 0.16927899686520376,
+      "macro avg": {
+        "precision": 0.1998000239179018,
+        "recall": 0.2017179547875488,
+        "f1-score": 0.1360742387594711,
+        "support": 638.0
+      },
+      "weighted avg": {
+        "precision": 0.39692652033025166,
+        "recall": 0.16927899686520376,
+        "f1-score": 0.17784498654680525,
+        "support": 638.0
+      }
+    }
+  },
+  "enriched_text": {
+    "accuracy": 0.9984,
+    "macro_f1": 0.9956,
+    "weighted_f1": 0.9984,
+    "feature_dim": 384,
+    "report": {
+      "approach": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 355.0
+      },
+      "grasp": {
+        "precision": 1.0,
+        "recall": 0.9803921568627451,
+        "f1-score": 0.9900990099009901,
+        "support": 51.0
+      },
+      "lift": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "move": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 168.0
+      },
+      "place": {
+        "precision": 0.975609756097561,
+        "recall": 1.0,
+        "f1-score": 0.9876543209876543,
+        "support": 40.0
+      },
+      "accuracy": 0.9984326018808778,
+      "macro avg": {
+        "precision": 0.9951219512195122,
+        "recall": 0.996078431372549,
+        "f1-score": 0.9955506661777289,
+        "support": 638.0
+      },
+      "weighted avg": {
+        "precision": 0.9984708311032954,
+        "recall": 0.9984326018808778,
+        "f1-score": 0.9984345177812799,
+        "support": 638.0
+      }
+    }
+  },
+  "discrete_plus_template": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "feature_dim": 396,
+    "report": {
+      "approach": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 355.0
+      },
+      "grasp": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 51.0
+      },
+      "lift": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "move": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 168.0
+      },
+      "place": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 40.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 638.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 638.0
+      }
+    }
+  },
+  "discrete_plus_enriched": {
+    "accuracy": 0.9984,
+    "macro_f1": 0.9956,
+    "weighted_f1": 0.9984,
+    "feature_dim": 396,
+    "report": {
+      "approach": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 355.0
+      },
+      "grasp": {
+        "precision": 1.0,
+        "recall": 0.9803921568627451,
+        "f1-score": 0.9900990099009901,
+        "support": 51.0
+      },
+      "lift": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "move": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 168.0
+      },
+      "place": {
+        "precision": 0.975609756097561,
+        "recall": 1.0,
+        "f1-score": 0.9876543209876543,
+        "support": 40.0
+      },
+      "accuracy": 0.9984326018808778,
+      "macro avg": {
+        "precision": 0.9951219512195122,
+        "recall": 0.996078431372549,
+        "f1-score": 0.9955506661777289,
+        "support": 638.0
+      },
+      "weighted avg": {
+        "precision": 0.9984708311032954,
+        "recall": 0.9984326018808778,
+        "f1-score": 0.9984345177812799,
+        "support": 638.0
+      }
+    }
+  },
+  "delta_z_plus_enriched": {
+    "accuracy": 0.9984,
+    "macro_f1": 0.9956,
+    "weighted_f1": 0.9984,
+    "feature_dim": 896,
+    "report": {
+      "approach": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 355.0
+      },
+      "grasp": {
+        "precision": 1.0,
+        "recall": 0.9803921568627451,
+        "f1-score": 0.9900990099009901,
+        "support": 51.0
+      },
+      "lift": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "move": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 168.0
+      },
+      "place": {
+        "precision": 0.975609756097561,
+        "recall": 1.0,
+        "f1-score": 0.9876543209876543,
+        "support": 40.0
+      },
+      "accuracy": 0.9984326018808778,
+      "macro avg": {
+        "precision": 0.9951219512195122,
+        "recall": 0.996078431372549,
+        "f1-score": 0.9955506661777289,
+        "support": 638.0
+      },
+      "weighted avg": {
+        "precision": 0.9984708311032954,
+        "recall": 0.9984326018808778,
+        "f1-score": 0.9984345177812799,
+        "support": 638.0
+      }
+    }
+  },
+  "full_fusion": {
+    "accuracy": 0.9984,
+    "macro_f1": 0.9956,
+    "weighted_f1": 0.9984,
+    "feature_dim": 908,
+    "report": {
+      "approach": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 355.0
+      },
+      "grasp": {
+        "precision": 1.0,
+        "recall": 0.9803921568627451,
+        "f1-score": 0.9900990099009901,
+        "support": 51.0
+      },
+      "lift": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "move": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 168.0
+      },
+      "place": {
+        "precision": 0.975609756097561,
+        "recall": 1.0,
+        "f1-score": 0.9876543209876543,
+        "support": 40.0
+      },
+      "accuracy": 0.9984326018808778,
+      "macro avg": {
+        "precision": 0.9951219512195122,
+        "recall": 0.996078431372549,
+        "f1-score": 0.9955506661777289,
+        "support": 638.0
+      },
+      "weighted avg": {
+        "precision": 0.9984708311032954,
+        "recall": 0.9984326018808778,
+        "f1-score": 0.9984345177812799,
+        "support": 638.0
+      }
+    }
+  }
+}

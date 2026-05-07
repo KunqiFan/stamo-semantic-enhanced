@@ -1,0 +1,48 @@
+stage_labels:
+  - approach
+  - contact
+  - grasp
+  - lift
+  - move
+  - place
+
+attribute_labels:
+  contact_state:
+    - no_contact
+    - contact
+  gripper_state:
+    - open
+    - closing
+    - closed
+  object_motion:
+    - still
+    - lifted
+    - moved
+    - placed
+  target_relation:
+    - farther
+    - closer
+    - reached
+
+primary_tasks:
+  classification:
+    targets:
+      - contact_state
+      - gripper_state
+      - object_motion
+      - target_relation
+    metrics:
+      - accuracy
+      - macro_f1
+  probing:
+    targets:
+      - next_action
+      - short_horizon_state_change
+      - ee_delta
+    metrics:
+      - mse
+      - mae
+
+notes:
+  - Prefer attribute labels as the default interface because they align better with delta_z.
+  - Keep stage labels as an auxiliary analysis rather than the only semantic view.

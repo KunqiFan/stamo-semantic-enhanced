@@ -1,0 +1,155 @@
+{
+  "discrete_labels": {
+    "accuracy": 0.7806,
+    "macro_f1": 0.7355,
+    "weighted_f1": 0.803,
+    "feature_dim": 12,
+    "report": {
+      "approach": {
+        "precision": 0.9233576642335767,
+        "recall": 0.7126760563380282,
+        "f1-score": 0.8044515103338633,
+        "support": 355.0
+      },
+      "grasp": {
+        "precision": 0.2358490566037736,
+        "recall": 0.49019607843137253,
+        "f1-score": 0.3184713375796178,
+        "support": 51.0
+      },
+      "lift": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "move": {
+        "precision": 0.9438202247191011,
+        "recall": 1.0,
+        "f1-score": 0.9710982658959537,
+        "support": 168.0
+      },
+      "place": {
+        "precision": 0.5,
+        "recall": 0.7,
+        "f1-score": 0.5833333333333334,
+        "support": 40.0
+      },
+      "accuracy": 0.780564263322884,
+      "macro avg": {
+        "precision": 0.7206053891112902,
+        "recall": 0.7805744269538801,
+        "f1-score": 0.7354708894285537,
+        "support": 638.0
+      },
+      "weighted avg": {
+        "precision": 0.8501286370572432,
+        "recall": 0.780564263322884,
+        "f1-score": 0.8029783172240369,
+        "support": 638.0
+      }
+    }
+  },
+  "template_text": {
+    "accuracy": 0.7806,
+    "macro_f1": 0.7355,
+    "weighted_f1": 0.803,
+    "feature_dim": 384,
+    "report": {
+      "approach": {
+        "precision": 0.9233576642335767,
+        "recall": 0.7126760563380282,
+        "f1-score": 0.8044515103338633,
+        "support": 355.0
+      },
+      "grasp": {
+        "precision": 0.2358490566037736,
+        "recall": 0.49019607843137253,
+        "f1-score": 0.3184713375796178,
+        "support": 51.0
+      },
+      "lift": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "move": {
+        "precision": 0.9438202247191011,
+        "recall": 1.0,
+        "f1-score": 0.9710982658959537,
+        "support": 168.0
+      },
+      "place": {
+        "precision": 0.5,
+        "recall": 0.7,
+        "f1-score": 0.5833333333333334,
+        "support": 40.0
+      },
+      "accuracy": 0.780564263322884,
+      "macro avg": {
+        "precision": 0.7206053891112902,
+        "recall": 0.7805744269538801,
+        "f1-score": 0.7354708894285537,
+        "support": 638.0
+      },
+      "weighted avg": {
+        "precision": 0.8501286370572432,
+        "recall": 0.780564263322884,
+        "f1-score": 0.8029783172240369,
+        "support": 638.0
+      }
+    }
+  },
+  "enriched_text": {
+    "accuracy": 0.5846,
+    "macro_f1": 0.5163,
+    "weighted_f1": 0.6342,
+    "feature_dim": 384,
+    "report": {
+      "approach": {
+        "precision": 0.8333333333333334,
+        "recall": 0.5633802816901409,
+        "f1-score": 0.6722689075630253,
+        "support": 355.0
+      },
+      "grasp": {
+        "precision": 0.23148148148148148,
+        "recall": 0.49019607843137253,
+        "f1-score": 0.31446540880503143,
+        "support": 51.0
+      },
+      "lift": {
+        "precision": 0.17829457364341086,
+        "recall": 0.9583333333333334,
+        "f1-score": 0.3006535947712418,
+        "support": 24.0
+      },
+      "move": {
+        "precision": 0.9238095238095239,
+        "recall": 0.5773809523809523,
+        "f1-score": 0.7106227106227107,
+        "support": 168.0
+      },
+      "place": {
+        "precision": 0.5,
+        "recall": 0.7,
+        "f1-score": 0.5833333333333334,
+        "support": 40.0
+      },
+      "accuracy": 0.5846394984326019,
+      "macro avg": {
+        "precision": 0.5333837824535499,
+        "recall": 0.6578581291671599,
+        "f1-score": 0.5162687910190685,
+        "support": 638.0
+      },
+      "weighted avg": {
+        "precision": 0.7635077721886062,
+        "recall": 0.5846394984326019,
+        "f1-score": 0.6342113370319578,
+        "support": 638.0
+      }
+    }
+  }
+}

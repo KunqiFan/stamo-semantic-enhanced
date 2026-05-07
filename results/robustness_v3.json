@@ -1,0 +1,56 @@
+{
+  "raw_delta_z": {
+    "accuracy": 0.453,
+    "macro_f1": 0.1759,
+    "weighted_f1": 0.4023,
+    "feature_dim": 512
+  },
+  "hard_onehot": {
+    "accuracy": 0.7806,
+    "macro_f1": 0.7355,
+    "weighted_f1": 0.803,
+    "feature_dim": 12
+  },
+  "soft_probability": {
+    "accuracy": 0.8542,
+    "macro_f1": 0.747,
+    "weighted_f1": 0.8537,
+    "feature_dim": 12
+  },
+  "template_text": {
+    "accuracy": 0.7806,
+    "macro_f1": 0.7355,
+    "weighted_f1": 0.803,
+    "feature_dim": 384
+  },
+  "enriched_text": {
+    "accuracy": 0.5846,
+    "macro_f1": 0.5163,
+    "weighted_f1": 0.6342,
+    "feature_dim": 384
+  },
+  "delta_z+hard": {
+    "accuracy": 0.8715,
+    "macro_f1": 0.7071,
+    "weighted_f1": 0.8428,
+    "feature_dim": 524
+  },
+  "delta_z+soft": {
+    "accuracy": 0.8511,
+    "macro_f1": 0.7056,
+    "weighted_f1": 0.8351,
+    "feature_dim": 524
+  },
+  "delta_z+template": {
+    "accuracy": 0.8683,
+    "macro_f1": 0.7224,
+    "weighted_f1": 0.847,
+    "feature_dim": 896
+  },
+  "delta_z+enriched": {
+    "accuracy": 0.7367,
+    "macro_f1": 0.5494,
+    "weighted_f1": 0.7132,
+    "feature_dim": 896
+  }
+}

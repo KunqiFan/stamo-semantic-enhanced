@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Data and checkpoints (too large for git)
+data/
+ckpts/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Logs and outputs
+logs/
+wandb/
+outputs/
+*.log
+
+# Environment
+.env
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Misc
+*.zip
+*.tar.gz

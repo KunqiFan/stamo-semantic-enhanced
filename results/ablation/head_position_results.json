@@ -1,0 +1,50 @@
+{
+  "pooled": {
+    "HistGBT": {
+      "contact_state": 0.6944,
+      "gripper_state": 0.6473,
+      "object_motion": 0.6708,
+      "target_relation": 0.4248,
+      "mean": 0.6093
+    },
+    "LogReg": {
+      "contact_state": 0.5094,
+      "gripper_state": 0.4843,
+      "object_motion": 0.5596,
+      "target_relation": 0.3621,
+      "mean": 0.4788
+    }
+  },
+  "proj": {
+    "HistGBT": {
+      "contact_state": 0.8448,
+      "gripper_state": 0.8135,
+      "object_motion": 0.6599,
+      "target_relation": 0.4326,
+      "mean": 0.6877
+    },
+    "LogReg": {
+      "contact_state": 0.5251,
+      "gripper_state": 0.4969,
+      "object_motion": 0.5282,
+      "target_relation": 0.3777,
+      "mean": 0.4820
+    }
+  },
+  "dino": {
+    "HistGBT": {
+      "contact_state": 0.5564,
+      "gripper_state": 0.5094,
+      "object_motion": 0.6740,
+      "target_relation": 0.4091,
+      "mean": 0.5372
+    },
+    "LogReg": {
+      "contact_state": 0.5047,
+      "gripper_state": 0.4248,
+      "object_motion": 0.5266,
+      "target_relation": 0.3652,
+      "mean": 0.4553
+    }
+  }
+}

@@ -1,0 +1,134 @@
+
+--- Training + extracting pooled (subprocess) ---
+
+--- Training pooled ---
+
+============================================================
+Training position=pooled, task=droid_sem_pos_pooled
+============================================================
+04/29 [22:16:15] INFO     | >> [*] 2659 pair samples loaded from    data.py:169
+                          ../data/processed/droid_process_chain/tra            
+                          in.jsonl                                             
+  [droid_sem_pos_pooled] step 500/5000  loss=14.9265  diff=4.4361  sem=10.4903  speed=1.6 step/s
+  [droid_sem_pos_pooled] step 1000/5000  loss=11.5281  diff=1.9697  sem=9.5584  speed=1.6 step/s
+  [droid_sem_pos_pooled] step 1500/5000  loss=11.1791  diff=1.9237  sem=9.2554  speed=1.6 step/s
+  [droid_sem_pos_pooled] step 2000/5000  loss=10.9497  diff=1.8693  sem=9.0803  speed=1.6 step/s
+  [droid_sem_pos_pooled] step 2500/5000  loss=10.8183  diff=1.8546  sem=8.9637  speed=1.6 step/s
+  [droid_sem_pos_pooled] step 3000/5000  loss=10.6080  diff=1.8253  sem=8.7827  speed=1.6 step/s
+  [droid_sem_pos_pooled] step 3500/5000  loss=10.3055  diff=1.7320  sem=8.5735  speed=1.5 step/s
+  [droid_sem_pos_pooled] step 4000/5000  loss=10.1407  diff=1.7692  sem=8.3714  speed=1.5 step/s
+  [droid_sem_pos_pooled] step 4500/5000  loss=9.3132  diff=1.8020  sem=7.5111  speed=1.5 step/s
+  [droid_sem_pos_pooled] step 5000/5000  loss=8.9074  diff=1.8000  sem=7.1074  speed=1.5 step/s
+  Saved checkpoint: C:\Users\ryanf\Desktop\stamo_pro - 副本 - 副本\StaMo\ckpts\droid_sem_pos_pooled\5000
+
+--- Extracting features pooled ---
+04/29 [23:09:24] WARNING  | >> [*] loading checkpoints from     renderer.py:231
+                          C:\Users\ryanf\Desktop\stamo_pro -                   
+                          副本 -                                               
+                          副本\StaMo\ckpts\droid_sem_pos_pooled                
+                          \5000                                                
+                 WARNING  | >> [*] RenderNet - Missing          renderer.py:240
+                          top-level keys: ['projector', 'vae',                 
+                          'vision_backbone']                                   
+                 WARNING  | >> [*] RenderNet - Unexpected       renderer.py:241
+                          top-level keys: []                                   
+                 WARNING  | >> [*] Projector - Missing          renderer.py:240
+                          top-level keys: []                                   
+                 WARNING  | >> [*] Projector - Unexpected       renderer.py:241
+                          top-level keys: []                                   
+                 WARNING  | >> [*] SemanticHead - Missing       renderer.py:240
+                          top-level keys: []                                   
+                 WARNING  | >> [*] SemanticHead - Unexpected    renderer.py:241
+                          top-level keys: []                                   
+  Extracting 2659 features (pooled) from train.jsonl...
+  Extracting 638 features (pooled) from test.jsonl...
+  Features saved to C:\Users\ryanf\Desktop\stamo_pro - 副本 - 副本\data\interim\droid_process_chain\latents_pos_pooled
+
+--- Evaluating pooled ---
+
+  === Position pooled — HistGBT (visual-only 2560D) ===
+    contact_state: 0.6944
+    gripper_state: 0.6473
+    object_motion: 0.6708
+    target_relation: 0.4248
+    mean: 0.6093
+
+  === Position pooled — LogReg (visual-only 2560D) ===
+    contact_state: 0.5094
+    gripper_state: 0.4843
+    object_motion: 0.5596
+    target_relation: 0.3621
+    mean: 0.4788
+
+--- Training + extracting proj (subprocess) ---
+
+--- Training proj ---
+
+============================================================
+Training position=proj, task=droid_sem_pos_proj
+============================================================
+04/29 [23:30:01] INFO     | >> [*] 2659 pair samples loaded from    data.py:169
+                          ../data/processed/droid_process_chain/tra            
+                          in.jsonl                                             
+  [droid_sem_pos_proj] step 500/5000  loss=14.2690  diff=3.8556  sem=10.4134  speed=1.6 step/s
+  [droid_sem_pos_proj] step 1000/5000  loss=11.4191  diff=1.7980  sem=9.6211  speed=1.6 step/s
+  [droid_sem_pos_proj] step 1500/5000  loss=11.0115  diff=1.7866  sem=9.2249  speed=1.6 step/s
+  [droid_sem_pos_proj] step 2000/5000  loss=10.5424  diff=1.9099  sem=8.6324  speed=1.6 step/s
+  [droid_sem_pos_proj] step 2500/5000  loss=10.3853  diff=1.8433  sem=8.5421  speed=1.6 step/s
+  [droid_sem_pos_proj] step 3000/5000  loss=9.2641  diff=1.7994  sem=7.4647  speed=1.5 step/s
+  [droid_sem_pos_proj] step 3500/5000  loss=8.5618  diff=1.7108  sem=6.8510  speed=1.5 step/s
+  [droid_sem_pos_proj] step 4000/5000  loss=8.2971  diff=1.6590  sem=6.6381  speed=1.5 step/s
+  [droid_sem_pos_proj] step 4500/5000  loss=6.3891  diff=1.7760  sem=4.6131  speed=1.5 step/s
+  [droid_sem_pos_proj] step 5000/5000  loss=6.5924  diff=1.7283  sem=4.8641  speed=1.6 step/s
+  Saved checkpoint: C:\Users\ryanf\Desktop\stamo_pro - 副本 - 副本\StaMo\ckpts\droid_sem_pos_proj\5000
+
+--- Extracting features proj ---
+04/30 [00:23:51] WARNING  | >> [*] loading checkpoints from     renderer.py:231
+                          C:\Users\ryanf\Desktop\stamo_pro -                   
+                          副本 -                                               
+                          副本\StaMo\ckpts\droid_sem_pos_proj\5                
+                          000                                                  
+                 WARNING  | >> [*] RenderNet - Missing          renderer.py:240
+                          top-level keys: ['projector', 'vae',                 
+                          'vision_backbone']                                   
+                 WARNING  | >> [*] RenderNet - Unexpected       renderer.py:241
+                          top-level keys: []                                   
+04/30 [00:23:52] WARNING  | >> [*] Projector - Missing          renderer.py:240
+                          top-level keys: []                                   
+                 WARNING  | >> [*] Projector - Unexpected       renderer.py:241
+                          top-level keys: []                                   
+                 WARNING  | >> [*] SemanticHead - Missing       renderer.py:240
+                          top-level keys: []                                   
+                 WARNING  | >> [*] SemanticHead - Unexpected    renderer.py:241
+                          top-level keys: []                                   
+  Extracting 2659 features (proj) from train.jsonl...
+  Extracting 638 features (proj) from test.jsonl...
+  Features saved to C:\Users\ryanf\Desktop\stamo_pro - 副本 - 副本\data\interim\droid_process_chain\latents_pos_proj
+
+--- Evaluating proj ---
+
+  === Position proj — HistGBT (visual-only 2560D) ===
+    contact_state: 0.8448
+    gripper_state: 0.8135
+    object_motion: 0.6599
+    target_relation: 0.4326
+    mean: 0.6877
+
+  === Position proj — LogReg (visual-only 2560D) ===
+    contact_state: 0.5251
+    gripper_state: 0.4969
+    object_motion: 0.5282
+    target_relation: 0.3777
+    mean: 0.4820
+
+--- Training + extracting dino (subprocess) ---
+
+--- Training dino ---
+
+============================================================
+Training position=dino, task=droid_sem_pos_dino
+============================================================
+04/30 [11:04:15] INFO     | >> [*] 2659 pair samples loaded from    data.py:169
+                          ../data/processed/droid_process_chain/tra            
+                          in.jsonl                                             
+  [droid_sem_pos_dino] step 500/5000  loss=15.0274  diff=4.3773  sem=10.6500  speed=1.5 step/s

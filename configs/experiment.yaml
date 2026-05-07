@@ -1,0 +1,39 @@
+project_name: stamo_process_bridge
+random_seed: 42
+
+paths:
+  manifest_train: data/processed/train.jsonl
+  manifest_val: data/processed/val.jsonl
+  manifest_test: data/processed/test.jsonl
+  latent_dir: data/interim/latents
+  semantics_dir: data/interim/semantics
+  outputs_dir: outputs
+
+features:
+  use_text: true
+  use_delta_z: true
+  use_gold_semantics: false
+  use_predicted_semantics: true
+  text_feature_name: caption
+
+models:
+  text_only:
+    type: linear
+  delta_z_only:
+    type: mlp
+    hidden_dim: 256
+  text_plus_semantics:
+    type: fusion_mlp
+    hidden_dim: 256
+
+training:
+  batch_size: 64
+  epochs: 20
+  lr: 0.001
+  weight_decay: 0.0001
+
+evaluation:
+  primary_metric: macro_f1
+  regression_metrics:
+    - mse
+    - mae

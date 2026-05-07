@@ -1,0 +1,23 @@
+Train: 2659, Eval: 638
+Feature dim: 2629
+
+=== contact_state (CV train) ===
+              precision    recall  f1-score   support
+
+     contact     0.9889    0.9882    0.9886      1530
+  no_contact     0.9841    0.9849    0.9845      1129
+
+    accuracy                         0.9868      2659
+   macro avg     0.9865    0.9866    0.9865      2659
+weighted avg     0.9868    0.9868    0.9868      2659
+
+=== contact_state (eval) ===
+              precision    recall  f1-score   support
+
+     contact     0.9829    0.9375    0.9597       368
+  no_contact     0.9199    0.9778    0.9479       270
+
+    accuracy                         0.9545       638
+   macro avg     0.9514    0.9576    0.9538       638
+weighted avg     0.9562    0.9545    0.9547       638
+

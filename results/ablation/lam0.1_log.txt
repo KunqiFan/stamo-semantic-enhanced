@@ -1,0 +1,48 @@
+Train: 2659, Eval: 638
+Feature dim: 2629
+
+=== contact_state (CV train) ===
+              precision    recall  f1-score   support
+
+     contact     0.9921    0.9856    0.9889      1530
+  no_contact     0.9807    0.9894    0.9850      1129
+
+    accuracy                         0.9872      2659
+   macro avg     0.9864    0.9875    0.9869      2659
+weighted avg     0.9873    0.9872    0.9872      2659
+
+=== contact_state (eval) ===
+              precision    recall  f1-score   support
+
+     contact     0.9831    0.9511    0.9669       368
+  no_contact     0.9362    0.9778    0.9565       270
+
+    accuracy                         0.9624       638
+   macro avg     0.9597    0.9644    0.9617       638
+weighted avg     0.9633    0.9624    0.9625       638
+
+
+=== gripper_state (CV train) ===
+              precision    recall  f1-score   support
+
+      closed     0.9761    0.9825    0.9793      1371
+     closing     0.9130    0.7925    0.8485       159
+        open     0.9772    0.9876    0.9824      1129
+
+    accuracy                         0.9733      2659
+   macro avg     0.9554    0.9208    0.9367      2659
+weighted avg     0.9728    0.9733    0.9728      2659
+
+=== gripper_state (eval) ===
+              precision    recall  f1-score   support
+
+      closed     0.9639    0.9304    0.9469       316
+     closing     0.7857    0.6346    0.7021        52
+        open     0.9141    0.9852    0.9483       270
+
+    accuracy                         0.9295       638
+   macro avg     0.8879    0.8501    0.8658       638
+weighted avg     0.9283    0.9295    0.9275       638
+
+C:\Users\ryanf\AppData\Local\Programs\Python\Python313\Lib\site-packages\joblib\externals\loky\backend\resource_tracker.py:146: UserWarning: resource_tracker: process died unexpectedly, relaunching. Some folders/semaphores might leak.
+  warnings.warn(

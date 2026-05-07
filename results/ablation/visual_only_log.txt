@@ -1,0 +1,89 @@
+Train: 2659, Eval: 638
+
+Evaluating lambda=0.1 (visual-only 2560D)...
+  HistGradientBoosting:
+    contact_state: 0.9342
+    gripper_state: 0.9044
+    object_motion: 0.6646
+    target_relation: 0.4138
+  Logistic Regression:
+    contact_state: 0.6034
+    gripper_state: 0.5596
+    object_motion: 0.4389
+    target_relation: 0.3260
+
+Evaluating lambda=0.5 (visual-only 2560D)...
+  HistGradientBoosting:
+    contact_state: 0.8777
+    gripper_state: 0.8527
+    object_motion: 0.6693
+    target_relation: 0.4091
+  Logistic Regression:
+    contact_state: 0.5392
+    gripper_state: 0.5157
+    object_motion: 0.4875
+    target_relation: 0.3417
+
+Evaluating lambda=1.0 (visual-only 2560D)...
+  HistGradientBoosting:
+    contact_state: 0.5517
+    gripper_state: 0.5110
+    object_motion: 0.6708
+    target_relation: 0.4373
+  Logistic Regression:
+    contact_state: 0.4984
+    gripper_state: 0.4671
+    object_motion: 0.5376
+    target_relation: 0.3401
+
+Evaluating lambda=2.0 (visual-only 2560D)...
+  HistGradientBoosting:
+    contact_state: 0.6082
+    gripper_state: 0.5611
+    object_motion: 0.6755
+    target_relation: 0.4310
+  Logistic Regression:
+    contact_state: 0.5188
+    gripper_state: 0.4592
+    object_motion: 0.5643
+    target_relation: 0.3699
+
+Evaluating lambda=5.0 (visual-only 2560D)...
+  HistGradientBoosting:
+    contact_state: 0.8934
+    gripper_state: 0.8699
+    object_motion: 0.6771
+    target_relation: 0.4310
+  Logistic Regression:
+    contact_state: 0.6207
+    gripper_state: 0.5705
+    object_motion: 0.4984
+    target_relation: 0.3433
+
+==========================================================================================
+VISUAL-ONLY FEATURES (delta_z + delta_pooled = 2560D) — HistGradientBoosting
+==========================================================================================
+lambda      contact_state       gripper_state       object_motion       target_relation         mean
+------------------------------------------------------------------------------------------
+0.1         0.9342              0.9044              0.6646              0.4138                0.7292
+0.5         0.8777              0.8527              0.6693              0.4091                0.7022
+1.0*        0.5517              0.5110              0.6708              0.4373                0.5427
+2.0         0.6082              0.5611              0.6755              0.4310                0.5690
+5.0         0.8934              0.8699              0.6771              0.4310                0.7179
+
+==========================================================================================
+VISUAL-ONLY FEATURES (delta_z + delta_pooled = 2560D) — Logistic Regression (LINEAR)
+==========================================================================================
+lambda      contact_state       gripper_state       object_motion       target_relation         mean
+------------------------------------------------------------------------------------------
+0.1         0.6034              0.5596              0.4389              0.3260                0.4820
+0.5         0.5392              0.5157              0.4875              0.3417                0.4710
+1.0*        0.4984              0.4671              0.5376              0.3401                0.4608
+2.0         0.5188              0.4592              0.5643              0.3699                0.4781
+5.0         0.6207              0.5705              0.4984              0.3433                0.5082
+
+HistGBT mean accuracy spread: 18.65pp (min=54.27%, max=72.92%)
+
+LogReg mean accuracy spread: 4.74pp (min=46.08%, max=50.82%)
+
+Results saved to C:\Users\ryanf\Desktop\stamo_pro - 副本 - 副本\results\ablation\visual_only_results.json
